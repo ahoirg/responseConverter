@@ -94,7 +94,7 @@ func createUrl(item string) (result string, err error) {
 		return item, fmt.Errorf("isNotValid")
 	}
 
-	if u.Scheme == "" || !(u.Scheme == "fmt" || u.Scheme == "http" || u.Scheme == "https") {
+	if u.Scheme == "" || !(u.Scheme == "ftp" || u.Scheme == "http" || u.Scheme == "https") {
 		return item, fmt.Errorf("isNotValid")
 	}
 
